@@ -65,11 +65,12 @@ const css = `
   .tab_text {
     color: ${foregroundColor};
     border-color: transparent !important;
-    opacity: 0.33;
+    opacity: 0.5;
   }
 
   .tab_active .tab_text {
     opacity: 1;
+    color: ${WHITE};
   }
 `;
 
