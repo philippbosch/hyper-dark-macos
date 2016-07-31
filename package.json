@@ -1,0 +1,31 @@
+{
+  "name": "hyperterm-dark-osx",
+  "version": "0.1.0",
+  "description": "Hyperterm theme matching OSX's dark mode colors",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run test",
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philippbosch/hyperterm-dark-osx.git"
+  },
+  "keywords": [
+    "hyperterm",
+    "dark mode",
+    "osx",
+    "theme"
+  ],
+  "author": "Philipp Bosch <hello@pb.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philippbosch/hyperterm-dark-osx/issues"
+  },
+  "homepage": "https://github.com/philippbosch/hyperterm-dark-osx#readme",
+  "devDependencies": {
+    "eslint": "^3.1.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.11.0"
+  }
+}
