@@ -1,4 +1,4 @@
-# `hyperterm-dark-osx`
+# `hyperterm-dark-macos`
 
 ![Theme in action](https://cloud.githubusercontent.com/assets/7525670/16979989/4ddde96e-4e64-11e6-8383-fd48a942ae53.png)
 
