@@ -1,6 +1,6 @@
-# `hyperterm-dark-macos`
+# hyperterm-dark-macos
 
-![theme in action](https://cloud.githubusercontent.com/assets/57509/17278807/5fbb3636-5766-11e6-9e38-010138294fa7.png)
+![theme in action](https://cloud.githubusercontent.com/assets/57509/17278885/d68f4526-5767-11e6-9a41-a1c3f99dd8a6.png)
 
 A theme for Hyperterm that pairs nicely with macOS dark mode. Most colors are taken from the [smyck color scheme](http://color.smyck.org/).
 
