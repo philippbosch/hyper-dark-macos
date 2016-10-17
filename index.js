@@ -43,6 +43,8 @@ const css = `
   /* Hide bottom border if tab is active, make bg lighter */
   .tab_tab {
     color: #{foregroundColor} !important;
+    border-left: 0 none;
+    border-right: 0 none;
   }
 
   .tab_active {
