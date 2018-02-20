@@ -77,7 +77,7 @@ const css = `
 `;
 
 // Apply theme
-exports.decorateConfig = (config) => (
+exports.decorateConfig = config => (
   Object.assign({}, config, {
     backgroundColor,
     foregroundColor,
@@ -92,7 +92,7 @@ exports.decorateConfig = (config) => (
 );
 
 // Development middleware for HMR
-exports.middleware = () => (next) => (action) => {
+exports.middleware = () => next => (action) => {
   /* eslint-disable no-param-reassign, default-case */
   switch (action.type) {
     case 'CONFIG_LOAD':
