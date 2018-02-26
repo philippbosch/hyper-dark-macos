@@ -1,6 +1,6 @@
 {
   "name": "hyper-dark-macos",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Hyper theme matching macOS' dark mode colors",
   "main": "index.js",
   "scripts": {
