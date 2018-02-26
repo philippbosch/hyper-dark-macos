@@ -39,7 +39,7 @@ const colors = {
   lightWhite: WHITE,
 };
 
-const css = `
+const themeStyles = `
   /* Hide bottom border if tab is active, make bg lighter */
   .tab_tab {
     color: #{foregroundColor} !important;
@@ -74,11 +74,20 @@ const css = `
     opacity: 1;
     color: ${WHITE};
   }
+
+  .xterm {
+    opacity: 0.6;
+    transition: .1s ease opacity;
+  }
+
+  .term_active .xterm {
+    opacity: 1;
+  }
 `;
 
 // Apply theme
-exports.decorateConfig = config => (
-  Object.assign({}, config, {
+exports.decorateConfig = (config) => {
+  const decoratedConfig = Object.assign({}, config, {
     backgroundColor,
     foregroundColor,
     borderColor,
@@ -86,23 +95,8 @@ exports.decorateConfig = config => (
     colors,
     css: `
       ${config.css || ''}
-      ${css}
+      ${themeStyles}
     `,
-  })
-);
-
-// Development middleware for HMR
-exports.middleware = () => next => (action) => {
-  /* eslint-disable no-param-reassign, default-case */
-  switch (action.type) {
-    case 'CONFIG_LOAD':
-    case 'CONFIG_RELOAD':
-      action.config.foregroundColor = foregroundColor;
-      action.config.backgroundColor = backgroundColor;
-      action.config.cursorColor = foregroundColor;
-      action.config.borderColor = borderColor;
-      action.config.colors = colors;
-      action.config.css = css;
-  }
-  next(action);
+  });
+  return decoratedConfig;
 };
